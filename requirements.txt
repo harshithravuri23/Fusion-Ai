@@ -12,7 +12,3 @@ certifi
 idna
 charset-normalizer
 json5
-math
-string
-random
-re
