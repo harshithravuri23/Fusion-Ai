@@ -12,4 +12,9 @@ certifi
 idna
 charset-normalizer
 json5
-dotenv
+python-dotenv
+pyyaml
+Pillow
+spacy
+textstat
+pyperclip
