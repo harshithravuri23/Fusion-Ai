@@ -5,19 +5,15 @@ from apps import text_summary
 from apps import url_checker
 
 
-import os
-import spacy
+# import spacy
+# import os
 
-# Define the model name
-MODEL_NAME = "en_core_web_sm"
-
-# Check if the model exists, if not, download it
-try:
-    nlp = spacy.load(MODEL_NAME)
-except OSError:
-    os.system(f"python -m spacy download {MODEL_NAME}")
-    nlp = spacy.load(MODEL_NAME)
-
+# try:
+#     nlp = spacy.load("en_core_web_sm")
+# except OSError:
+#     print("Downloading 'en_core_web_sm'...")
+#     os.system("python -m spacy download en_core_web_sm")
+#     nlp = spacy.load("en_core_web_sm")
 
 
 
