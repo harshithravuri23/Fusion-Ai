@@ -18,3 +18,4 @@ Pillow
 spacy
 textstat
 pyperclip
+en-core-web-sm
