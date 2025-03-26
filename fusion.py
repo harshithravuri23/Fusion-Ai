@@ -1,8 +1,15 @@
 import streamlit as st
+# Set page config
+st.set_page_config(page_title="Fusion AI", page_icon="🤖", layout="wide")
+
+
 from apps import image_generation
 from apps import password_checker
 from apps import text_summary
 from apps import url_checker
+
+
+
 
 
 # import spacy
@@ -17,8 +24,7 @@ from apps import url_checker
 
 
 
-# Set page config
-st.set_page_config(page_title="Fusion AI", page_icon="🤖", layout="wide")
+
 
 # Apply custom styles for navbar
 st.markdown(

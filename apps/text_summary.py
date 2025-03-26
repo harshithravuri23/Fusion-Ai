@@ -35,47 +35,8 @@ def text_summarizer(text, summary_length):
 
 # Define the app function
 def app():
-    # Custom CSS for Fusion AI Theme
-    st.markdown("""
-        <style>
-        .card {
-            background: linear-gradient(to right, #ff8c00, #ff2e63);
-            border-radius: 15px;
-            padding: 20px;
-            color: white;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .stButton button {
-            background: linear-gradient(to right, #00b4db, #0083b0);
-            color: white;
-            font-weight: bold;
-            border-radius: 25px;
-            padding: 12px 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .stButton button:hover {
-            background: linear-gradient(to right, #0083b0, #00b4db);
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-            transform: scale(1.1);
-        }
-        .summary-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            color: white;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-
     # Main Content - Header
-    st.markdown("<div class='card'><h2>📚 Fusion AI - Smart Text Summarizer 📚</h2></div>", unsafe_allow_html=True)
+    st.markdown("<div class='card'><h2>📚 Text Summarization 📚</h2></div>", unsafe_allow_html=True)
 
     # User Input
     input_text = st.text_area("Enter your text to summarize:", placeholder="Paste your article or paragraph...")
@@ -105,6 +66,3 @@ def app():
                 st.download_button(label="📥 Download Summary", data=summary, file_name="summary.txt", mime="text/plain")
         else:
             st.warning("Please enter some text to summarize.")
-
-    # Footer
-    st.markdown("<div class='footer'>Built with ❤️ using spaCy and Streamlit | Part of Fusion AI</div>", unsafe_allow_html=True)
